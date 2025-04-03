@@ -16,10 +16,10 @@ Your name:
 </form>
 <?php
 //replace the user and password with your credentials
-$host = "jfcloudlinuxbook-bzh8gsfsftaucrhw.centralus-01.azurewebsites.net";
+$host = "jfcloudbook.mysql.database.azure.com/wwwroot";
 $user = "ljfague1";
 $password = "Unity916";
-$db = "visitorDB";
+$db = "visitordb";
 // connect to the database
 $conn = mysqli_init();
 mysqli_real_connect($conn, $host, $user, $password, $db,3306);
