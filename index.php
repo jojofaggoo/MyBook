@@ -16,13 +16,13 @@ Your name:
 </form>
 <?php
 //replace the user and password with your credentials
-$host = "jfcloudbook.mysql.database.azure.com";
+$host = "jfsecondserverfordropbox7.mysql.database.azure.net";
 $user = "ljfague1";
 $password = "Unity916";
 $db = "visitordb";
 // connect to the database
 $conn = mysqli_init();
-mysqli_real_connect($conn, $host, $user, $password, $db);
+mysqli_real_connect($conn, $host, $user, $password, $db,1433);
 if (isset($_POST['submit']))
 {
 $yourName=$_POST['name'];
@@ -33,9 +33,9 @@ if(mysqli_query($conn, $query))
 echo "<p>Hi, $yourName, welcome to my cloud.</p>";
 else
 echo "<p>Hi, $yourName, please try again. </p>";
-}
+}}
 //if the View all button is clicked
-if (isset($_POST['view']))
+if (isset($_POST['view'])
 {
 $query = "SELECT * FROM visitor";
 $result = mysqli_query($conn,$query);
