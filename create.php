@@ -12,7 +12,7 @@ $password = "Unity916";
 $db = "visitordb";
 // connect to the database
 $conn = mysqli_init();
-mysqli_real_connect($conn, $host, $user, $password, $db,1433); 
+mysqli_real_connect($conn, $host, $user, $password, $db); 
 $query = "CREATE TABLE visitor
 (
 visitorid INTEGER AUTO_INCREMENT,
