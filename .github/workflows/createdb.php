@@ -17,6 +17,11 @@ $conn = mysqli_init();
 if (!mysqli_real_connect($conn, $host, $user, $password, $db)) {
     die("Connection failed: " . mysqli_connect_error());
 }
+// Drop the table if it exists
+$dropQuery = "DROP TABLE IF EXISTS visitor;";
+if (!mysqli_query($conn, $dropQuery)) {
+    echo "<p>Error dropping table: " . mysqli_error($conn) . "</p>";
+}
 
 $query = "CREATE TABLE visitor (
     visitorid INTEGER AUTO_INCREMENT,
