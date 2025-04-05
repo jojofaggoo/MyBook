@@ -6,13 +6,13 @@
 <body>
 <?php 
 //replace the user and password with your credentials
-$host = "jfsecondserverfordropbox7.mysql.database.azure.net";
+$host = "jfsecondserverfordropbox7.mysql.database.azure.com";
 $user = "ljfague1";
 $password = "Unity916";
 $db = "visitordb";
 // connect to the database
 $conn = mysqli_init();
-mysqli_real_connect($conn, $host, $user, $password, $db,3306); 
+mysqli_real_connect($conn, $host, $user, $password, $db); 
 $query = "CREATE TABLE visitor
 (
 visitorid INTEGER AUTO_INCREMENT,
