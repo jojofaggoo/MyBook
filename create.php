@@ -6,6 +6,7 @@
 <body>
 <?php 
 //replace the user and password with your credentials
+echo "<p>Table Created.</p>";
 $host = "jfsecondserverfordropbox7.mysql.database.azure.com";
 $user = "ljfague1";
 $password = "Unity916";
