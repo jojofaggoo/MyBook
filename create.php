@@ -20,11 +20,11 @@ visitorName VARCHAR(100) NOT NULL,
 visitTime TIMESTAMP DEFAULT NOW(),
 PRIMARY KEY(visitorid)
 )";
-if(mysqli_query($conn, $query)){
-echo "<p>Table Created.</p>");
+if(mysqli_query($conn, $query))
+echo "<p>Table Created.</p>";
 //close connection
 mysqli_close($conn);
-}
+
 ?>
 </body>
 </html>
