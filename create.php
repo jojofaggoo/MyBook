@@ -1,4 +1,5 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html lang = "en">
 <head>
 <meta charset="utf-8">
 <title>Create MySQL on Azure</title>
@@ -6,13 +7,14 @@
 <body>
 <?php 
 //replace the user and password with your credentials
-echo "<p>Table Created.</p>";
+
 $host = "jfsecondserverfordropbox7.mysql.database.azure.com";
 $user = "ljfague1";
 $password = "Unity916";
 $db = "visitordb";
 // connect to the database
 $conn = mysqli_init();
+
 mysqli_real_connect($conn, $host, $user, $password, $db); 
 $query = "CREATE TABLE visitor
 (
@@ -21,8 +23,8 @@ visitorName VARCHAR(100) NOT NULL,
 visitTime TIMESTAMP DEFAULT NOW(),
 PRIMARY KEY(visitorid)
 )";
-if(mysqli_query($conn, $query))
-echo "<p>Table Created.</p>";
+if (mysqli_query($conn, $query))
+{echo "<p>Table Created.</p>";}
 //close connection
 mysqli_close($conn);
 
