@@ -6,9 +6,9 @@
 <body>
 <?php 
 //replace the user and password with your credentials
-$host = "thirdtrywebappdbasejf-server.mysql.database.azure.com";
-$user = "famdsapkrg";
-$password = 'QzHBALFzE$V3XrJA';
+$host = "jfsecondserverfordropbox7.mysql.database.azure.com";
+$user = "ljfague1";
+$password = "Unity916";
 $db = "visitordb";
 // connect to the database
 $conn = mysqli_init();
