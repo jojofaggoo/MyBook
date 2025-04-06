@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Create MySQL on Azure</title>
+<title>Create Table with MySQL on Azure</title>
 </head>
 <body>
 <?php 
