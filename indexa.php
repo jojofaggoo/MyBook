@@ -1,19 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset = "utf-8">
-<title>My PHP Website</title>
-</head>
-<body>
-<h1>Welcome to the Cloud!</h1>
-<form action = "" method ="post">
-Your name:
-<br>
-<input type="text" name = "name" size="30" maxlength = "30">
-<br>
-<input type="submit" name = "submit" value="Submit">
-<input type="submit" name = "view" value = "View All">
-</form>
 <?php
 //replace the user and password with your credentials
 $host = "jfsecondserverfordropbox7.mysql.database.azure.com";
@@ -56,5 +40,4 @@ echo $display;
 //close connection 
 mysqli_close($conn);
 ?>
-</body>
-</html>
+
