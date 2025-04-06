@@ -2,10 +2,15 @@
 <html>
 <head>
 <meta charset = "utf-8">
-<title>My PHP Website</title>
+<title>My Cloud Website</title>
 </head>
 <body>
-<h1>Welcome to the Cloud!</h1>
+<h1>Welcome to My Cloud!</h1>
+<p>CISS301 Operating Systems and Cloud Computing</p>
+<p>Instructor: Prof. Alfred Basta</p>
+<p>Dropbox Assignment 7</p>
+<p>Joe Fague</p>
+<br><br><br><br>  
 <form action = "" method ="post">
 Your name:
 <br>
@@ -23,7 +28,8 @@ $db = "visitordb";
 // connect to the database
 $conn = mysqli_init();
 mysqli_real_connect($conn, $host, $user, $password, $db);
-$display = ""; // Initialize the display variable
+$display = "<p>No visitors found.</p>";
+// Initialize the display variable
 
 if (isset($_POST['submit'])) {
 $yourName = $_POST['name'];
@@ -35,7 +41,6 @@ echo "<p>Hi, $yourName, welcome to my cloud.</p>";
 echo "<p>Hi, $yourName, please try again. </p>";
 }
 }
-
 //if the View all button is clicked
 if (isset($_POST['view'])) {
 $query = "SELECT * FROM visitor";
@@ -50,10 +55,10 @@ $display .= "Date Time: " . $row["visitTime"] . "<br>";
 $display .= "<p>No visitors found.</p>"; // Add a message if no visitors are found
 }
 }
-
 echo $display;
 //close connection 
 mysqli_close($conn);
 ?>
 </body>
 </html>
+
