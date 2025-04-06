@@ -41,7 +41,6 @@ echo "<p>Hi, $yourName, welcome to my cloud.</p>";
 echo "<p>Hi, $yourName, please try again. </p>";
 }
 }
-
 //if the View all button is clicked
 if (isset($_POST['view'])) {
 $query = "SELECT * FROM visitor";
@@ -56,7 +55,6 @@ $display .= "Date Time: " . $row["visitTime"] . "<br>";
 $display .= "<p>No visitors found.</p>"; // Add a message if no visitors are found
 }
 }
-
 echo $display;
 //close connection 
 mysqli_close($conn);
