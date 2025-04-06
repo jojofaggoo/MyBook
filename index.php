@@ -23,7 +23,8 @@ $db = "visitordb";
 // connect to the database
 $conn = mysqli_init();
 mysqli_real_connect($conn, $host, $user, $password, $db);
-$display = ""; // Initialize the display variable
+$display = "<p>No visitors found.</p>";
+// Initialize the display variable
 
 if (isset($_POST['submit'])) {
     $yourName = $_POST['name'];
